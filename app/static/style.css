@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 80px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.table {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 120px;
+    height: 20px;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+/* Personalizações opcionais: largura fixa diferente para cada tabela */
+td:nth-child(1) th, th:nth-child(1) td {
+    width: 60px; /* Largura fixa para colunas da primeira tabela */
+}
+
+td:nth-child(2) th, th:nth-child(2) td {
+    width: 60px; /* Largura fixa para colunas da segunda tabela */
+}
+
+td:nth-child(3) th, th:nth-child(3) td {
+    width: 60px; /* Largura fixa para colunas da quarta tabela */
+}
+
+td:nth-child(4), th:nth-child(4) {
+    width: 60px; /* Ajuste esta largura conforme necessário */
+}
+
+.vetor-coluna {
+    max-width: 120px; /* Ajuste o valor conforme necessário */
+    word-wrap: break-word; /* Quebra as palavras longas */
+    overflow: hidden; /* Esconde o excesso de conteúdo */
+    text-overflow: ellipsis; /* Adiciona "..." no final do texto longo */
+    white-space: nowrap; /* Opcional: se quiser impedir quebras de linha */
+}
